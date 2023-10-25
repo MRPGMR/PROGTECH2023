@@ -32,7 +32,7 @@ public class Main {
 
                     break;
                 case 2:
-                    palyabeolvaso palya=new palyabeolvaso("wumpuszimput.txt");
+                    palyabeolvaso palya=new palyabeolvaso("src/main/resources/wumpuszinput.txt");
 
 
                     break;
