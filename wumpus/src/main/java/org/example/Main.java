@@ -1,5 +1,7 @@
 package org.example;
 
+import java.io.IOException;
+import java.io.RandomAccessFile;
 import java.util.Scanner;
 
 public class Main {
@@ -27,18 +29,24 @@ public class Main {
             switch (valasztas) {
                 case 1:
                     Szerkesztes();
+
                     break;
                 case 2:
-                    Beolvasas();
+                    palyabeolvaso palya=new palyabeolvaso("wumpuszimput.txt");
+
+
                     break;
                 case 3:
                     Betoltes();
+
                     break;
                 case 4:
                     Mentes();
+
                     break;
                 case 5:
                     Jatszas();
+
                     break;
                 case 6:
                     System.out.println("Viszontlátás!");
@@ -54,26 +62,33 @@ public class Main {
     public static void Szerkesztes() {
         // Pályaszerkesztés
         System.out.println("Pályaszerkesztés opció kiválasztva.");
-    }
-    public static void Beolvasas() {
-        // Pályaszerkesztés
-        System.out.println("Pályaszerkesztés opció kiválasztva.");
-    }
+        System.out.printf("Még nincs kész ez a funkció");
 
-    public static void Mentes() {
-        // Mentés
-        System.out.println("Mentés opció kiválasztva.");
-    }
 
-    public static void Betoltes() {
-        // Betöltés
-        System.out.println("Betöltés opció kiválasztva.");
     }
+        public static void Beolvasas(String palya) {
+            // Beolvasass
 
-    public static void Jatszas() {
-        // Játékmenet
-        System.out.println("Játszás opció kiválasztva.");
+            System.out.println("Beolvasás opció kiválasztva.");
+
+        }
+
+        public static void Mentes() {
+            // Mentés
+            System.out.println("Mentés opció kiválasztva.");
+            System.out.println("Még nincs kész ez a funkció");
+        }
+
+        public static void Betoltes() {
+            // Betöltés
+            System.out.println("Betöltés opció kiválasztva.");
+            System.out.println("Még nincs kész ez a funkció");
+        }
+
+        public static void Jatszas() {
+            // Játék
+            System.out.println("Játszás opció kiválasztva.");
+        }
     }
-}
 
 
