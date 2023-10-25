@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Üdvözöllek a Wumplusz játékban!");
+        System.out.println("Üdvözöllek a Wumpusz játékban!");
         System.out.print("Kérem, add meg a játékos nevét: ");
 
         String jatekosNev = scanner.nextLine();
