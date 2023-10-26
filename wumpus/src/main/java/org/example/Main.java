@@ -33,6 +33,7 @@ public class Main {
                     break;
                 case 2:
                     palyabeolvaso palya=new palyabeolvaso("src/main/resources/wumpuszinput.txt");
+                    palya.palyakiiratas(palya.getPalya());
 
 
                     break;
@@ -70,6 +71,7 @@ public class Main {
             // Beolvasass
 
             System.out.println("Beolvasás opció kiválasztva.");
+
 
         }
 
