@@ -31,8 +31,8 @@ public class Main {
                     palyabeolvaso palya = new palyabeolvaso("src/main/resources/wumpuszinput.txt");
                     System.out.println("A beolvasott pálya:");
                     palya.palyakiiratas(palya.getPalya());
-                    System.out.println("A kezdőkoorináták");
-                    System.out.println(palya.kezdopont[0]+""+palya.kezdopont[1]);
+                    System.out.println("A kezdőkoorináták:");
+                    System.out.println(palya.kezdopont[0]+";"+palya.kezdopont[1]);
                     break;
                 case 3:
                     Betoltes();
