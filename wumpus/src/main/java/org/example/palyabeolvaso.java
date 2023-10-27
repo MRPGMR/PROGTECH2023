@@ -11,9 +11,8 @@ public class palyabeolvaso {
     private char irany;
     private int palyameret;
 
-    //wumpuszinput beolvasása
+    
     public palyabeolvaso(String file) {
-
         try {
             RandomAccessFile bemenet = new RandomAccessFile(file, "r");
             String elsosor[] = bemenet.readLine().split(" ");
@@ -45,8 +44,9 @@ public class palyabeolvaso {
         return palya;
     }
 
-    public String[] getKezdopont() {
+    public String []getKezdopont() {
         return kezdopont;
+
     }
 
     public void setKezdopont(String[] kezdopont) {
@@ -68,6 +68,5 @@ public class palyabeolvaso {
             }
             System.out.print("\n");
         }
-
     }
 }

@@ -1,5 +1,6 @@
 package org.example;
 
+import java.awt.*;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.sql.SQLOutput;
@@ -8,12 +9,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         System.out.println("Üdvözöllek a Wumpusz játékban!");
         System.out.print("Kérem, add meg a játékos nevét: ");
-
         String jatekosNev = scanner.nextLine();
-
         while (true) {
             System.out.println("Üdvözöllek a Wumplusz játékban " + jatekosNev + "!");
             System.out.println("\nFőmenü:");
@@ -23,33 +21,27 @@ public class Main {
             System.out.println("3. Adatbázisba mentés");
             System.out.println("5. Játszás");
             System.out.println("6. Kilépés");
-
             System.out.print("Kérem, válassz egy opciót (1-5): ");
             int valasztas = scanner.nextInt();
-
             switch (valasztas) {
                 case 1:
                     Szerkesztes();
-
                     break;
                 case 2:
                     palyabeolvaso palya = new palyabeolvaso("src/main/resources/wumpuszinput.txt");
                     System.out.println("A beolvasott pálya:");
                     palya.palyakiiratas(palya.getPalya());
-
-
+                    System.out.println("A kezdőkoorináták");
+                    System.out.println(palya.kezdopont[0]+""+palya.kezdopont[1]);
                     break;
                 case 3:
                     Betoltes();
-
                     break;
                 case 4:
                     Mentes();
-
                     break;
                 case 5:
                     Jatszas();
-
                     break;
                 case 6:
                     System.out.println("Viszontlátás!");
@@ -66,16 +58,11 @@ public class Main {
         // Pályaszerkesztés
         System.out.println("Pályaszerkesztés opció kiválasztva.");
         System.out.printf("Még nincs kész ez a funkció");
-
-
     }
 
     public static void Beolvasas(String palya) {
         // Beolvasass
-
         System.out.println("Beolvasás opció kiválasztva.");
-
-
     }
 
     public static void Mentes() {
@@ -93,7 +80,6 @@ public class Main {
     public static void Jatszas() {
         // Játék
         System.out.println("Játszás opció kiválasztva.");
+        System.out.println("Még nincs kész ez a funkció");
     }
 }
-
-
