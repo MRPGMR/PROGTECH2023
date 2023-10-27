@@ -10,8 +10,9 @@ public class palyabeolvaso {
     String kezdopont[];
     private char irany;
     private int palyameret;
+
     //wumpuszinput beolvasása
-    public palyabeolvaso (String file) {
+    public palyabeolvaso(String file) {
 
         try {
             RandomAccessFile bemenet = new RandomAccessFile(file, "r");
@@ -28,11 +29,11 @@ public class palyabeolvaso {
                 lista.add(bemenet.readLine());
             }
 
-                for (int i =0;i<lista.size();i++) {
-                    for (int j = 0; j < palyameret; j++) {
-                        this.palya[i][j] = lista.get(i).charAt(j);
-                    }
+            for (int i = 0; i < lista.size(); i++) {
+                for (int j = 0; j < palyameret; j++) {
+                    this.palya[i][j] = lista.get(i).charAt(j);
                 }
+            }
 
             bemenet.close();
         } catch (IOException e) {
@@ -60,13 +61,13 @@ public class palyabeolvaso {
         this.irany = irany;
     }
 
-public void palyakiiratas (char palya[][]){
-    for (int i=0;i<palya.length;i++){
-        for (int j=0;j<palyameret;j++){
-            System.out.print(palya[i][j]);
+    public void palyakiiratas(char palya[][]) {
+        for (int i = 0; i < palya.length; i++) {
+            for (int j = 0; j < palyameret; j++) {
+                System.out.print(palya[i][j]);
+            }
+            System.out.print("\n");
         }
-        System.out.print("\n");
-    }
 
-}
+    }
 }
