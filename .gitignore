@@ -25,7 +25,3 @@ replay_pid*
 
 # Intellij
 .idea
-
-# Logs
-log/
-*.log
