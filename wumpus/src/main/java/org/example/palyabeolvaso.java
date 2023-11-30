@@ -11,6 +11,8 @@ public class palyabeolvaso {
     private char irany;
     private int palyameret;
 
+
+
     
     public palyabeolvaso(String file) {
         try {
@@ -37,7 +39,10 @@ public class palyabeolvaso {
             bemenet.close();
         } catch (IOException e) {
             System.out.println(e.getMessage());
+
+
         }
+
     }
 
     public char[][] getPalya() {

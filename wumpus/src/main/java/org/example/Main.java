@@ -33,6 +33,8 @@ public class Main {
                     palya.palyakiiratas(palya.getPalya());
                     System.out.println("A kezdőkoorináták:");
                     System.out.println(palya.kezdopont[0]+";"+palya.kezdopont[1]);
+                    System.out.println("A kezdő irány:");
+                    System.out.println(palya.getIrany());
                     break;
                 case 3:
                     Betoltes();
